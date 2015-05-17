@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psil Interpreter</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Psil", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li> <a href="#">SourceCode</a></li>
+                    @*<li>@Html.ActionLink("About", "About", "Home")</li>*@
+                    @*<li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <a href="https://twitter.com/surenderssm" target="_blank"><p>&copy; @DateTime.Now.Year - Surender</p></a>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/psil")
+    @Scripts.Render("~/bundles/terminal")
+    @RenderSection("scripts", required: false)
+
+
+    @*<script src="../../ExternalContent/jcubic-jquery.terminal-18f9ae9/js/jquery-1.7.1.min.js"></script>
+    <script src="../../ExternalContent/jcubic-jquery.terminal-18f9ae9/js/jquery.mousewheel-min.js"></script>
+    <script src="../../ExternalContent/jcubic-jquery.terminal-18f9ae9/js/jquery.terminal-min.js"></script>
+    <link href="../../ExternalContent/jcubic-jquery.terminal-18f9ae9/css/jquery.terminal.css" rel="stylesheet" />*@
+
+</html>

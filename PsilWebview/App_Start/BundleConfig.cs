@@ -21,7 +21,9 @@ namespace PsilWebview
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/respond.js",
+                      "~/Scripts/sweetalert-dev.js"
+                      ));
 
             // Include all the PSIL Files
             bundles.Add(new ScriptBundle("~/bundles/psil").IncludeDirectory("~/Scripts/Psil", "*.js", true));
@@ -29,10 +31,11 @@ namespace PsilWebview
             // Include all the Terminal Files
             bundles.Add(new ScriptBundle("~/bundles/terminal").IncludeDirectory("~/ExternalContent/jcubic-jquery.terminal-18f9ae9/js", "*.js", true));
 
-            
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
+                      "~/Content/sweetalert.css",
                       "~/ExternalContent/jcubic-jquery.terminal-18f9ae9/css/jquery.terminal.css"
                       ));
         }

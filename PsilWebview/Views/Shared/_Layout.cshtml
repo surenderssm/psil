@@ -21,8 +21,11 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li> <a href="#">SourceCode</a></li>
+                    <li> <a target="_blank" href="https://github.com/surenderssm/psil/tree/dev">SourceCode</a></li>
+                    <li> <a href="https://twitter.com/surenderssm" target="_blank"><p>Ping ME</p></a></li>
+
                     @*<li>@Html.ActionLink("About", "About", "Home")</li>*@
+
                     @*<li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
                 </ul>
             </div>
@@ -32,7 +35,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <a href="https://twitter.com/surenderssm" target="_blank"><p>&copy; @DateTime.Now.Year - Surender</p></a>
+            <a href="https://twitter.com/surenderssm" target="_blank"><p>Ping ME</p></a>
         </footer>
     </div>
 
@@ -41,11 +44,4 @@
     @Scripts.Render("~/bundles/psil")
     @Scripts.Render("~/bundles/terminal")
     @RenderSection("scripts", required: false)
-
-
-    @*<script src="../../ExternalContent/jcubic-jquery.terminal-18f9ae9/js/jquery-1.7.1.min.js"></script>
-    <script src="../../ExternalContent/jcubic-jquery.terminal-18f9ae9/js/jquery.mousewheel-min.js"></script>
-    <script src="../../ExternalContent/jcubic-jquery.terminal-18f9ae9/js/jquery.terminal-min.js"></script>
-    <link href="../../ExternalContent/jcubic-jquery.terminal-18f9ae9/css/jquery.terminal.css" rel="stylesheet" />*@
-
 </html>

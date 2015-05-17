@@ -189,3 +189,5 @@ GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
 README.md
+PsilWebview/Properties/PublishProfiles/psilcsharp - FTP.pubxml
+*.pubxml

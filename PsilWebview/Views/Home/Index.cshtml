@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<style>
+    /*overiding thead color-profile stop green*/
+    .terminal, .cmd {
+        color: greenyellow;
+        font-size: 14px;
+    }
+</style>
+<div class="jumbotron">
+    <h4>Psil</h4>
+    <div style="font-size:small">
+        Psil (Pronounced Sil) language Psil is an expression oriented language. Expressions evaluate to values.
+        <span style="display:block">
+            Below you can find Interpreter for Psil, It's an humble attempt in C#.<span class="btn-link" id="sampleStatements">Sample Statements</span>
+        </span>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Interpreter</h2>
+        <p>
+            <div>You can even evaluate awesome Javascript statements</div>
+            <div id="psilInter" style="height:300px"></div>
+        </p>
+    </div>
+</div>
